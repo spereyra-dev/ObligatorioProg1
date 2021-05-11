@@ -1,0 +1,160 @@
+/* Santiago Pereyra - 245198 */
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 33px;
+  color: black;
+  margin: 0;
+}
+table,th,td {
+  border: 1px solid black;
+  border-collapse: separate;
+  text-align: center;
+}
+table.c {
+  table-layout:auto;
+  width: 100%;
+}
+#main {
+  padding: 0 0 0 5%;
+}
+input[type="text"] {
+  width: auto;
+}
+input[id="monto"] {
+  width: 5%;
+}
+input[id="monto2"] {
+  width: 5%;
+}
+select {
+  width: auto;
+}
+.tablas {
+  padding: 2% 10% 0 0;
+}
+.tituloUno {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 3% 0 1% 0;
+}
+.tituloDos {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 1.5%;
+}
+.blockNav {
+  margin-bottom: 10%;
+}
+.ref{
+    margin-left: 2%;
+}
+.rojo{
+    color: rgb(243, 23, 96);
+}
+.verde{
+    color: rgb(32, 137, 44);
+}
+.piePagina {
+  text-align: center;
+  background-color: rgb(128, 128, 128);
+  width: 100%;
+  color: white;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.contenedor {
+  display: grid;
+  grid-template-columns: 20vw 80vw;
+  grid-template-rows: 100vh 0fr;
+  justify-content: space-evenly;
+}
+
+.contenedor #nav {
+  background-color: rgb(211, 211, 211);
+  text-align: center;
+  color: white;
+  border: 1px solid black;
+}
+.contenedor #main {
+  background-color: rgb(186, 186, 186);
+}
+#nav h2 {
+  font-size: 2rem;
+  color: black;
+}
+.logoDonar {
+  border-radius: 50%;
+  transform: scale(0.8);
+}
+.titleTable{
+    font-size: 1.2rem;
+    font-size: 900;
+    font-family: sans-serif;
+}
+.links {
+  display: block;
+  padding: 3%;
+  margin: 3%;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: rgb(85, 26, 139);
+  text-decoration: underline;
+  border: 3px solid darkblue;
+  border-radius: 10px;
+  background-color: rgb(114, 162, 207);
+}
+
+.total {
+  display: block;
+  padding: 3%;
+  margin: 3%;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: white;
+  border: 3px solid rgb(176, 179, 181);
+  border-radius: 20px;
+  background-color: rgb(58, 111, 162);
+}
+
+@media (max-width: 1056px) {
+  .contenedor {
+    grid-template-columns: 100vw;
+    grid-template-rows: 0fr 0fr 0fr;
+  }
+  #nav{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  #main{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding:0 5% 0 5%;
+  }
+  .piePagina{
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  .clear10px {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 10px;
+}
+    input[id="monto"] {
+    width: 20%;
+  }
+  .tablas{
+    display: block;
+    overflow-x:auto;
+  }
+}

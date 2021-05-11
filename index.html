@@ -1,0 +1,130 @@
+<!-- Santiago Pereyra - 245198 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Obligatorio de Programación">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="css/estilos.css?v1">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" href="" type="image/x-icon">
+    <title>Obligatorio</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div id="nav">
+            <h2>Sistema de donaciones</h2>
+            <img class="logoDonar" src="img/sangre.jpg" alt="Logo donaciones">
+            <div class="ref">
+                <nav class="blockNav">
+                    <a href="#donantes" class="links">Donantes</a>
+                    <a href="#donaciones" class="links">Donaciones</a>
+                    <a href="#estadisticas" class="links">Estadísticas</a>
+                </nav>
+                <div class="total">Total general <br>$2200</div>
+                <div class="total">Monto Donación Mayor <br>$1000</div>
+            </div>
+        </div>
+        <div id="main">
+            <div class="tituloUno" id="donantes">Registro de Donantes</div>
+            <div class="form">
+                <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    <span class="clear10px"></span>
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Dirección">
+                    <span class="clear10px"></span>
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" name="telefono" placeholder="Teléfono">
+                    <span class="clear10px"></span>
+                    <input type="button" value="Agregar">
+                </form>
+            </div>
+            <div class="tituloUno" id="donaciones">Registro de Donaciones</div>
+            <div class="form">     
+                <form>  
+                    <label for="donante">Donante</label>
+                    <select id="donante" name="donante">
+                    <option value="luis">Luis Pérez</option>
+                    <option value="ana">Ana Alvarez</option>
+                    </select>
+                    <span class="clear10px"></span>
+                    <label for="modo">Modo</label>
+                    <select id="modo" name="modo">
+                    <option value="efectivo">Efectivo</option>
+                    <option value="transferencia">Transferencia</option>
+                    <option value="canje">Canje</option>
+                    <option value="mercaderia">Mercadería</option>
+                    <option value="cheque">Cheque</option>
+                    <option value="otros">Otros</option>
+                    </select>
+                    <span class="clear10px"></span>
+                    <label for="monto">Monto</label>
+                    <input type="text" id="monto" name="monto">
+                    <span class="clear10px"></span>
+                    <label for="comentarios">Comentarios</label>
+                    <input type="text" id="comentarios" name="comentarios">
+                    <span class="clear10px"></span>
+                    <input type="button" value="Agregar">
+                </form>
+            </div>
+            <div class="tituloDos">Donaciones registradas</div>
+            <div class="selects">
+                Orden: 
+                <span class="clear10px"></span>
+                <input type="radio" id="decreciente" name="decreciente" value="decreciente" checked>
+                <label for="decreciente">monto decreciente</label>
+                <span class="clear10px"></span>
+                <input type="radio" id="creciente" name="creciente" value="creciente">
+                <label for="creciente">nombre donante creciente</label>
+            </div>
+            <div class="tablas">
+                <table class="c">
+                    <tr>
+                      <th class="titleTable">Donante</th>
+                      <th class="titleTable">Modo</th>
+                      <th class="titleTable">Monto</th>
+                      <th class="titleTable">Comentarios</th>
+                    </tr>
+                    <tr>
+                      <td>Luis Pérez (18 de Julio 1234, 099123456)</td>
+                      <td>Efectivo</td>
+                      <td class="rojo">1000</td>
+                      <td>Para usar en lo que sea necesario</td>
+                    </tr>
+                    <tr>
+                      <td>Ana Alvarez (Av. Brasil 9876, 7111213)</td>
+                      <td>Cheque</td>
+                      <td class="verde">900</td>
+                      <td>Para arreglo local</td>
+                    </tr>
+                    <tr>
+                      <td>Ana Alvarez (Av. Brasil 9876, 7111213)</td>
+                      <td>Canje</td>
+                      <td class="verde">300</td>
+                      <td>Para reparación</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form">
+                Resaltar filas:
+                <input type="checkbox" id="filas" name="filas" value="filas" checked>
+                de monto:
+                <input type="text" id="monto2" name="monto2" value="0">
+            </div>
+            <div class="tituloUno" id="estadisticas">Estadísticas</div>
+            <div class="text">
+                <div>Cantidad total de donaciones: <span id="totalDonaciones">3</span></div>
+                <div>Promedio por donación: <span id="promedioDonacion">733</span></div>
+                <div>Donante que más veces donó: <span id="donanteMas">Ana Alvarez</span></div>
+            </div>
+        </div>
+        <footer class="piePagina">
+            Cátedra de Programación - Programación 1 - 1er. Semestre 2021 - Santiago Pereyra - Nº Estudiante 245198
+        </footer>
+    </div>
+</body>
+</html>

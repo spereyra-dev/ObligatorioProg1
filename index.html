@@ -9,13 +9,13 @@
     <meta name="author" content="SitePoint">
     <link rel="stylesheet" href="css/estilos.css?v1">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">
-    <link rel="icon" href="" type="image/x-icon">
+    <link rel="icon" href="https://www.ort.edu.uy/innovafront/theme/si2/favicon.ico" type="image/x-icon">
     <title>Obligatorio</title>
 </head>
 <body>
     <div class="contenedor">
-        <div id="nav">
-            <h2>Sistema de donaciones</h2>
+        <header id="nav">
+            <h1>Sistema de donaciones</h1>
             <img class="logoDonar" src="img/sangre.jpg" alt="Logo donaciones">
             <div class="ref">
                 <nav class="blockNav">
@@ -26,9 +26,10 @@
                 <div class="total">Total general <br>$2200</div>
                 <div class="total">Monto Donación Mayor <br>$1000</div>
             </div>
-        </div>
-        <div id="main">
-            <div class="tituloUno" id="donantes">Registro de Donantes</div>
+        </header>
+        <main id="main">
+            <section>
+            <h2 class="tituloUno" id="donantes">Registro de Donantes</h2>
             <div class="form">
                 <form>
                     <label for="nombre">Nombre</label>
@@ -43,7 +44,9 @@
                     <input type="button" value="Agregar">
                 </form>
             </div>
-            <div class="tituloUno" id="donaciones">Registro de Donaciones</div>
+            </section>
+            <section>
+            <h2 class="tituloUno" id="donaciones">Registro de Donaciones</h2>
             <div class="form">     
                 <form>  
                     <label for="donante">Donante</label>
@@ -71,14 +74,16 @@
                     <input type="button" value="Agregar">
                 </form>
             </div>
-            <div class="tituloDos">Donaciones registradas</div>
+        </section>
+    <section>
+            <h2 class="tituloDos">Donaciones registradas</h2>
             <div class="selects">
                 Orden: 
                 <span class="clear10px"></span>
-                <input type="radio" id="decreciente" name="decreciente" value="decreciente" checked>
+                <input type="radio" id="decreciente" name="donacion" value="decreciente" checked>
                 <label for="decreciente">monto decreciente</label>
                 <span class="clear10px"></span>
-                <input type="radio" id="creciente" name="creciente" value="creciente">
+                <input type="radio" id="creciente" name="donacion" value="creciente">
                 <label for="creciente">nombre donante creciente</label>
             </div>
             <div class="tablas">
@@ -115,13 +120,14 @@
                 de monto:
                 <input type="text" id="monto2" name="monto2" value="0">
             </div>
-            <div class="tituloUno" id="estadisticas">Estadísticas</div>
+        </section>
+            <h2 class="tituloUno" id="estadisticas">Estadísticas</h2>
             <div class="text">
                 <div>Cantidad total de donaciones: <span id="totalDonaciones">3</span></div>
                 <div>Promedio por donación: <span id="promedioDonacion">733</span></div>
                 <div>Donante que más veces donó: <span id="donanteMas">Ana Alvarez</span></div>
             </div>
-        </div>
+        </main>
         <footer class="piePagina">
             Cátedra de Programación - Programación 1 - 1er. Semestre 2021 - Santiago Pereyra - Nº Estudiante 245198
         </footer>

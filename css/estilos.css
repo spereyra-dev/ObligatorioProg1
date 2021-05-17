@@ -18,6 +18,7 @@ table.c {
 }
 #main {
   padding: 0 0 0 5%;
+  border-bottom: 1px solid black;
 }
 input[type="text"] {
   width: auto;
@@ -69,8 +70,8 @@ select {
 }
 .contenedor {
   display: grid;
-  grid-template-columns: 20vw 80vw;
-  grid-template-rows: 100vh 0fr;
+  grid-template-columns: 20vw 79vw;
+  grid-template-rows: 105vh 0fr;
   justify-content: space-evenly;
 }
 
@@ -83,7 +84,7 @@ select {
 .contenedor #main {
   background-color: rgb(186, 186, 186);
 }
-#nav h2 {
+#nav h1 {
   font-size: 2rem;
   color: black;
 }

@@ -6,6 +6,8 @@ body {
   line-height: 33px;
   color: black;
   margin: 0;
+  padding: 0;
+  min-height: 100%;
 }
 table,th,td {
   border: 1px solid black;
@@ -53,11 +55,14 @@ select {
 .ref{
     margin-left: 2%;
 }
-.rojo{
+.mayorMil{
     color: rgb(243, 23, 96);
 }
-.verde{
+.menorMil{
     color: rgb(32, 137, 44);
+}
+.resaltado{
+  background-color: rgb(255, 255, 50);
 }
 .piePagina {
   text-align: center;
@@ -70,9 +75,11 @@ select {
 }
 .contenedor {
   display: grid;
-  grid-template-columns: 20vw 79vw;
-  grid-template-rows: 105vh 0fr;
+  grid-template-columns: 20vw 80vw;
+  grid-template-rows: auto 0fr;
   justify-content: space-evenly;
+  width: 100vw;
+  height: 100vh;
 }
 
 .contenedor #nav {
@@ -120,6 +127,7 @@ select {
   border: 3px solid rgb(176, 179, 181);
   border-radius: 20px;
   background-color: rgb(58, 111, 162);
+  font-style: italic;
 }
 
 @media (max-width: 1056px) {

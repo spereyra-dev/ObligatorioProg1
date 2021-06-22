@@ -55,6 +55,15 @@ select {
 .ref{
     margin-left: 2%;
 }
+li {
+	margin: 0;
+	padding: 36px 0 36px 84px;
+	list-style: none;
+	background-image: url("/img/donarSangre.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+}
 .mayorMil{
     color: rgb(243, 23, 96);
 }

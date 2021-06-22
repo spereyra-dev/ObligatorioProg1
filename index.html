@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/estilos.css?v2">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">
     <link rel="icon" href="https://www.ort.edu.uy/innovafront/theme/si2/favicon.ico" type="image/x-icon">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <title>Obligatorio</title>
     <script src="js/clases.js"></script>
 	<script src="js/funciones.js"></script>
@@ -53,8 +53,8 @@
                 <div class="form">     
                     <form id="formRegistroDonacion">  
                         <label for="donante">Donante</label>
-                        <select id="donante" name="donante" required>
-                            <!-- donante -->
+                        <select id="donante" name="donante" required> <!-- Da error el validator de W3 porque no tiene options al inicio, se cargan dinámicamente -->
+                            <!-- donantes -->
                         </select>
                         <span class="clear10px"></span>
                         <label for="modo">Modo</label>

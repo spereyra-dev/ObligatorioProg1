@@ -64,6 +64,9 @@ select {
 .resaltado{
   background-color: rgb(255, 255, 50);
 }
+.none{
+  display: none;
+}
 .piePagina {
   text-align: center;
   background-color: rgb(128, 128, 128);

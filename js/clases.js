@@ -139,7 +139,7 @@ class Sistema {
     let ordenable = Object.entries(map).sort((a, b) => b - a);
     let result = false;
     let resultado = [];
-    if (ordenable.length > 1) {
+    if (ordenable.length > 1 && ordenable[0][1]==maxCount) {
       for (let i = 0; i < ordenable.length - 1; i++) {
         if (ordenable[i][1] === ordenable[i + 1][1]) {
           let posicionCortarNombreUno = ordenable[i][0].search(/\(/g);

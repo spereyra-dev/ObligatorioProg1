@@ -1,3 +1,4 @@
+// Santiago Pereyra - 245198
 class Donante {
   constructor(nombre, direccion, telefono, cantidad = 0) {
     this.nombre = nombre;

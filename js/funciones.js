@@ -1,3 +1,4 @@
+// Santiago Pereyra - 245198
 window.addEventListener("load", inicio);
 let sistema = new Sistema();
 

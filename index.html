@@ -53,7 +53,8 @@
                 <div class="form">     
                     <form id="formRegistroDonacion">  
                         <label for="donante">Donante</label>
-                        <select id="donante" name="donante" required> <!-- Da error el validator de W3 porque no tiene options al inicio, se cargan dinámicamente -->
+                        <select id="donante" name="donante" required>
+                            <option value="" disabled selected>Debe agregar un donante</option>
                             <!-- donantes -->
                         </select>
                         <span class="clear10px"></span>
